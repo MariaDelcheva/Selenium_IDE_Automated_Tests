@@ -1,0 +1,344 @@
+{
+  "id": "df06ee88-753a-4557-8b08-56a95ea7bd92",
+  "version": "2.0",
+  "name": "IdeaCenterTestProject",
+  "url": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:83",
+  "tests": [{
+    "id": "7aa699aa-a4dd-45d4-9952-9b2c24c4299c",
+    "name": "1.Home Page Navigation Test (Non-Logged User)",
+    "commands": [{
+      "id": "71122a2a-e8f9-4bc9-b419-a7eb996ab22b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f207ddf8-7515-439d-b5fd-b64fd0b93a35",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f5a590e-66f1-43cc-b91f-0edccecad3d2",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Home Page - IdeaCenter.WebApp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f5466bc-feca-48c3-baa9-d31c556c01ca",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[@type='button' and contains(text(), 'Sign up for free')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23de8cb8-0c10-4582-bfaa-03b84b25f2e5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[@class='btn btn-outline-info px-3 me-2' and contains(text(), 'Login')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a5828d2-284d-4a19-9ef2-44c35fbcb3d6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "63bf9b85-84f4-45bc-9550-0eba9b9ee738",
+    "name": "2.Log In Test",
+    "commands": [{
+      "id": "048a5d59-4238-4387-bc84-0e9cc420f444",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f271741-9fbc-49a6-9245-4cb31026868c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c934828b-110d-4607-a1e0-5dc3b196f1c0",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class='btn btn-outline-info px-3 me-2' and contains(text(), 'Login')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3b220df-da23-440b-8bb8-e4b6dcbd7c96",
+      "comment": "",
+      "command": "click",
+      "target": "//input[@type='email']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e728b8a-e1ba-4d78-b8eb-94bbe87a99be",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='email']",
+      "targets": [],
+      "value": "MariaTestEmail@abv.bg"
+    }, {
+      "id": "39e77db3-dfff-4fc4-a14e-267ce87bd49f",
+      "comment": "",
+      "command": "click",
+      "target": "//input[@type='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "889e88a6-731d-4249-a29e-ca9c2d7cc25e",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='password']",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "59a59fb6-ece6-4d51-96a3-bc8dc813dac8",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@type='submit' and contains(text(), 'Sign in')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2a33a68-f6c3-4903-b841-7acfa6b1a2ca",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[@class='nav-link' and contains(text(), 'My Profile')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c653335e-8299-4ec0-932c-2eebe2d8456b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[contains(text(), 'My Ideas')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10a4b00e-13c5-4002-b241-a00d1d8bed23",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[contains(text(), 'Create Idea')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3139dbf0-a9e8-45d3-be3a-6bda959f1dec",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[contains(text(), 'Logout')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a3568d4-6675-4174-92f7-59a392fc4682",
+      "comment": "",
+      "command": "click",
+      "target": "//a[contains(text(), 'Logout')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dce66b2-a4cd-4dd0-8f60-f14763f8784d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[contains(text(), 'Sign up for free')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4dfae43-e394-4cfa-bcef-5a2f1a2f49ff",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a7af14f4-0cda-441d-aaf5-5cdd83609e39",
+    "name": "3.Edit Profile Test",
+    "commands": [{
+      "id": "30fbdeee-179b-498e-85c1-802513ff4bb4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16240e02-dc8c-4bab-ab7e-f94efa23d051",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "914c11a8-a290-4cf9-8e44-a622bcded1bf",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class='btn btn-outline-info px-3 me-2' and contains(text(), 'Login')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f85eddd8-24b9-4fdb-a0f0-f22c387cc752",
+      "comment": "",
+      "command": "click",
+      "target": "//input[@type='email']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43f01ece-b190-43bd-83d1-783c952f0986",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='email']",
+      "targets": [],
+      "value": "MariaTestEmail@abv.bg"
+    }, {
+      "id": "16690bcf-fe37-4460-be57-d2ce5cbf8059",
+      "comment": "",
+      "command": "click",
+      "target": "//input[@type='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "640bf8fe-f99c-4355-95d4-432c25008991",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='password']",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "90f7f83d-0b20-48fb-afc1-0f1c3618c319",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@type='submit' and contains(text(), 'Sign in')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc1c4d49-41ad-4592-b92c-38ab768bd8c1",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class='nav-link' and contains(text(), 'My Profile')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8848d12-d559-40bd-b32a-82a81992a9a5",
+      "comment": "",
+      "command": "click",
+      "target": "//span[@type='button' and contains(text(),'Edit profile')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7922993-3120-4160-baa9-88d181d7fd14",
+      "comment": "",
+      "command": "click",
+      "target": "//input[@name='FirstName']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf9986d7-2c63-40ca-988e-0fe694c701cc",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='FirstName']",
+      "targets": [],
+      "value": "Maria"
+    }, {
+      "id": "b33acc67-56e5-41ac-90e4-90c93c2185c9",
+      "comment": "",
+      "command": "click",
+      "target": "//input[@name='LastName']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e9d03bf-b07e-4e98-a845-62146432ea17",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='LastName']",
+      "targets": [],
+      "value": "Delcheva"
+    }, {
+      "id": "81ac1cd4-ebea-46a2-b89a-51197a6310cb",
+      "comment": "",
+      "command": "click",
+      "target": "//input[@name='City']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60693a2c-d174-4475-a75b-6addf920b4e6",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='City']",
+      "targets": [],
+      "value": "Sofia"
+    }, {
+      "id": "9bdf9e5a-817d-40a0-8f80-600d47c4a641",
+      "comment": "",
+      "command": "click",
+      "target": "//textarea[@name='About']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49092625-499b-4679-8e00-9386cda8068b",
+      "comment": "",
+      "command": "type",
+      "target": "//textarea[@name='About']",
+      "targets": [],
+      "value": "Some description"
+    }, {
+      "id": "9a26f86d-dff5-4f25-81b0-c4dcf457c282",
+      "comment": "",
+      "command": "click",
+      "target": "//button[contains (text(),'Done')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dee9ae7-cd90-4936-a23b-301c8eeff451",
+      "comment": "",
+      "command": "assertText",
+      "target": "//div[@ class='ms-3']//p",
+      "targets": [],
+      "value": "Maria Delcheva , Sofia"
+    }, {
+      "id": "12b3bd1a-0a03-4559-9e7d-a47d1c839658",
+      "comment": "",
+      "command": "assertText",
+      "target": "//div[@ class='p-4']//p",
+      "targets": [],
+      "value": "Some description"
+    }, {
+      "id": "5b7d4462-2e19-4e67-88e8-7afa5d950d1e",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@type='button' and contains(text(),'Logout')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a20764bc-a415-46c6-9ec8-a658fd0a68bd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//a[ contains(text(),'Login')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3a6ed42-b467-4dec-b628-493948472768",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1628d79c-1f21-407a-8d4a-3b2a580abb63",
+    "name": "UserManagementFlowTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7aa699aa-a4dd-45d4-9952-9b2c24c4299c", "63bf9b85-84f4-45bc-9550-0eba9b9ee738", "a7af14f4-0cda-441d-aaf5-5cdd83609e39"]
+  }],
+  "urls": ["http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:83/"],
+  "plugins": []
+}
